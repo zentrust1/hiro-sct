@@ -1,4 +1,4 @@
-name: Publish to npm
+name: Publish to npmp
 
 on:
   workflow_dispatch:
@@ -12,14 +12,12 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-      - name: Config npm
-        run: |
-          npm config set registry https://registry.npmjs.org/
       - name: Login to npm
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          npm login  --token=${NPM_TOKEN}
+          echo "registry=https://registry.npmjs.org/" > .npmrc
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> .npmrc
 
       - name: Publish to npm
         run: npm publish
