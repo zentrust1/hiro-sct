@@ -12,12 +12,14 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-
+      - name: Config npm
+        run: |
+          npm config set registry https://registry.npmjs.org/
       - name: Login to npm
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          npm login --registry=https://registry.npmjs.org/ --token=${NPM_TOKEN}
+          npm login  --token=${NPM_TOKEN}
 
       - name: Publish to npm
         run: npm publish
