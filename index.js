@@ -1,4 +1,4 @@
-const db = require('./firebase');
+const db = require('./firebase.json');
 async function validateUser(username, password) {
   const ref = db.ref('users');
   const snapshot = await ref.once('value');
