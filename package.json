@@ -1,7 +1,7 @@
 {
-  "name": "zen-security",
+  "name": "zendev-security",
   "version": "1.0.0",
-  "description": "Security package for bot with Firebase integration",
+  "description": "TEST",
   "main": "index.js",
   "dependencies": {
     "firebase-admin": "^11.10.0"
