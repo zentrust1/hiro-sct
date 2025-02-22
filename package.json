@@ -1,11 +1,11 @@
 {
-  "name": "kiruru-sct",
+  "name": "hiro-sct",
   "version": "1.0.0",
   "description": "Security package for bot with Firebase integration",
   "main": "index.js",
   "dependencies": {
     "firebase-admin": "^11.10.0"
   },
-  "author": "kiruru",
+  "author": "zen",
   "license": "MIT"
 }
