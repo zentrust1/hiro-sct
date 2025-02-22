@@ -1,7 +1,7 @@
 {
-  "name": "zendev-security",
+  "name": "Kiruru-security",
   "version": "1.0.0",
-  "description": "TEST",
+  "description": "Security package for bot with Firebase integration",
   "main": "index.js",
   "dependencies": {
     "firebase-admin": "^11.10.0"
